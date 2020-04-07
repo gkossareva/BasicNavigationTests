@@ -9,6 +9,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 public class TestNGHomeAssignment2 {
@@ -69,6 +70,9 @@ public class TestNGHomeAssignment2 {
         Assert.assertTrue(element.isDisplayed());
 //“This page returned a 500 status code
     }
+//@DataProvider(name="test data"){
+//
+//}
     @AfterMethod
     public void teardown() {
         driver.quit();

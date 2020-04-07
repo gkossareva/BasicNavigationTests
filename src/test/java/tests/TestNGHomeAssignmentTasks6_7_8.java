@@ -55,21 +55,21 @@ public class TestNGHomeAssignmentTasks6_7_8 {
         Thread.sleep(1);
         //Step 10. Verify that you’ve received an email from
         //“do-not-reply@practice.cybertekschool.com”
-//        driver.findElement(By.cssSelector("a[class='navbar-brand']")).click();
+        driver.findElement(By.cssSelector("a[class='navbar-brand']")).click();
         Thread.sleep(5);
         //Step 11. Click on that email to open it.
-//        Actions actions = new Actions(driver);
-//        WebElement elementLocator = driver.findElement(By.xpath("//table//tbody//tr[1]//td[1]"));
-//        actions.doubleClick(elementLocator).perform();
-//        //Step 12. Verify that email is from: “do-notreply@practice.cybertekschool.com”
-//        String expectedEmail="do-not-reply@practice.cybertekschool.com";
-//        String actualEmail = driver.findElement(By.id("odesilatel")).getText();
-//        Assert.assertEquals(actualEmail, expectedEmail);
-//
-//        //Step 13. Verify that subject is: “Thanks for
-//        String expected2 = "Thanks for subscribing to practice.cybertekschool.com!";
-//        String actual2 = driver.findElement(By.id("predmet")).getText();
-//        Assert.assertEquals(actual2, expected2);
+        Actions actions = new Actions(driver);
+        WebElement elementLocator = driver.findElement(By.xpath("//table//tbody//tr[1]//td[1]"));
+        actions.doubleClick(elementLocator).perform();
+        //Step 12. Verify that email is from: “do-notreply@practice.cybertekschool.com”
+        String expectedEmail="do-not-reply@practice.cybertekschool.com";
+        String actualEmail = driver.findElement(By.id("odesilatel")).getText();
+        Assert.assertEquals(actualEmail, expectedEmail);
+
+        //Step 13. Verify that subject is: “Thanks for
+        String expected2 = "Thanks for subscribing to practice.cybertekschool.com!";
+        String actual2 = driver.findElement(By.id("predmet")).getText();
+        Assert.assertEquals(actual2, expected2);
   }
   @Test
   public void Test7() throws Exception{
